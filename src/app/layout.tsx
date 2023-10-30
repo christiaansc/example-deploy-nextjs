@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/style/globals.css'
 
+import "tw-elements/dist/css/tw-elements.min.css";
 
 export const metadata: Metadata = {
   title: 'Raices - plantas de interior',
