@@ -28,7 +28,7 @@ const Footer = () => {
                 className="bg-green-950 w-full p-4 text-center">
                 © 2023 Copyright:
                 <a className="text-whitehite" href="https://tw-elements.com/"
-                >TW elements</a
+                >Raices Chile.</a
                 >
             </div>
         </footer>
