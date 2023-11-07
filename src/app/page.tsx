@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
+import Information from "@/components/Information";
 import NavBar from "@/components/NavBar";
 import Servicios from "@/components/Servicios";
 import dynamic from "next/dynamic";
@@ -15,6 +16,7 @@ export default function Home() {
       <Carousel/>
       <Gallery/>
       <Servicios/>
+      <Information/>
       <Footer/>
     </main>
   )
