@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image"
+import { useEffect } from "react";
 
 const images = [
     {
@@ -23,17 +25,26 @@ const images = [
 ]
 
 const ImageGallery = () => {
+    useEffect(() => {
+        const init = async () => {
+            const { Animate ,Lightbox,  initTE } = await import("tw-elements");
+            initTE({ Animate , Lightbox });
+        };
+        init();
+    }, []);
     return (
         <>
             {
                 images.map((item, idx) => (
-                    <figure key={idx} className="inline-block max-w-sm px-5 py-5">
+                    <figure key={idx} 
+                    className="inline-block max-w-sm px-5 py-5">
                         <Image
                             width={1000}
                             height={1000}
                             src={item.path}
                             className="h-auto max-w-full rounded-lg align-middle leading-none shadow-lg "
-                            alt="Image - Gallery" />
+                            alt="Image - Gallery" 
+                            priority/>
                     </figure>
                 ))
             }

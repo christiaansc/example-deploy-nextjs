@@ -13,10 +13,10 @@ const Gallery = () => {
     return (
         <section >
             <div
-                className="flex justify-center p-10 mt-10">
-                <h1 className="text-5xl text-green-900 text-center">Descubre todas nuestras <span className="text-green-700">plantas de interior</span></h1>
+                className="flex justify-center p-10">
+                <h1 className="animate-typing overflow-hidden whitespace-nowrap  text-5xl text-green-900 text-center">Descubre todas nuestras <span className="text-green-700">plantas de interior</span></h1>
             </div>
-            <div className="flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap justify-center items-center pb-10">
                 <ImageGallery />
             </div>
         </section>

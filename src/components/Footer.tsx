@@ -3,7 +3,7 @@ import Link from "next/link"
 const Footer = () => {
     return (
         <footer
-            className="flex flex-col items-center bg-green-900 text-center text-white">
+            className="bottom-0 flex flex-col mt-auto items-center bg-green-900 text-center text-white">
             <div className="container px-6 pt-6">
                 <div className="mb-6 flex justify-center">
                     <a
@@ -27,7 +27,7 @@ const Footer = () => {
             <div
                 className="bg-green-950 w-full p-4 text-center">
                 © 2023 Copyright:
-                <a className="text-whitehite" href="https://tw-elements.com/"
+                <a className="text-whitehite" href="/"
                 >Raices Chile.</a
                 >
             </div>
