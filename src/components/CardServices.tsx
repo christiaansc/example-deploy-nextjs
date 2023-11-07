@@ -25,10 +25,10 @@ const CardServices = () => {
 
                             <div className="p-6">
                                 <h5
-                                    className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    className="mb-2 text-xl font-medium leading-tight text-green-950 dark:text-green-900">
                                     {item.title}
                                 </h5>
-                                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                <p className="mb-4 text-base text-green-900 ">
                                     {item.description}
                                 </p>
 
