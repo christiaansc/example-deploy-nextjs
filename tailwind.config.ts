@@ -26,12 +26,12 @@ const config: Config = {
             borderColor: "transparent"
           },
           "100%": {
-            borderColor: "white"
+            borderColor: "black"
           }
         }
       },
       animation: {
-        typing: "typing 4s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 2s steps(44)  alternate, blink .7s infinite"
       }
     },
     screens: {
