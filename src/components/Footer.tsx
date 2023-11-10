@@ -26,10 +26,9 @@ const Footer = () => {
 
             <div
                 className="bg-green-950 w-full p-4 text-center">
-                © 2023 Copyright:
-                <a className="text-whitehite" href="/"
-                >Raices Chile.</a
-                >
+                © 2023 Copyright.
+                <Link className="text-whitehite px-2" href="/"
+                >Raices Chile.</Link >
             </div>
         </footer>
     )

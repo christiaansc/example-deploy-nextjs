@@ -30,7 +30,7 @@ const ImageGallery = () => {
                             width={1000}
                             height={1000}
                             src={item.path}
-                            className="h-auto max-w-full rounded-lg align-middle leading-none shadow-lg "
+                            className="h-auto max-w-full rounded-lg align-middle leading-none shadow-lg hover:scale-110 "
                             alt="Image - Gallery" 
                             priority/>
                     </figure>
