@@ -39,7 +39,7 @@ const CardBlog = () => {
                 </div>
             </div>
       
-            <div className="mb-16 flex flex-wrap lg:flex-row-reverse">
+            {/* <div className="mb-16 flex flex-wrap lg:flex-row-reverse">
                 <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pl-6">
                     <div
                         className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -110,7 +110,7 @@ const CardBlog = () => {
                         dolore placeat rem dignissimos?
                     </p>
                 </div>
-            </div>
+            </div> */}
 
 
 

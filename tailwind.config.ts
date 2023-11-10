@@ -11,27 +11,8 @@ const config: Config = {
       backgroundImage: {
         'banner-title': "url('/images/banner_titulo.jpg')",
       },
-      keyframes: {
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
-          },
-          "100%": {
-            width: "100%"
-          }
-        },
-        blink: {
-          "50%": {
-            borderColor: "transparent"
-          },
-          "100%": {
-            borderColor: "black"
-          }
-        }
-      },
-      animation: {
-        typing: "typing 2s steps(44)  alternate, blink .7s infinite"
+      colors: {
+        'cream': '#f5f5f5'
       }
     },
     screens: {

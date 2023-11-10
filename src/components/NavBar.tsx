@@ -10,10 +10,10 @@ import MenuOverlay from './MenuOverlay'
 
 const navigation = [
     { title: 'Inicio', path: '/', current: true },
-    { title: 'servicios', path: '/servicios', current: false },
-    { title: 'plantas', path: '/plantas', current: false },
-    { title: 'insumos', path: '/insumos', current: false },
-    { title: 'blog', path: '/blog', current: false },
+    { title: 'Servicios', path: '/servicios', current: false },
+    { title: 'Plantas', path: '/plantas', current: false },
+    { title: 'Insumos', path: '/insumos', current: false },
+    { title: 'Blog', path: '/blog', current: false },
 ]
 export const NavBar = () => {
 
@@ -35,7 +35,7 @@ export const NavBar = () => {
         className="sticky  top-0 left-0 right-0 z-10 bg-white  w-full shadow-xl opacity-90 mx-auto">
             <div className="flex items-center justify-between  px-4">
                 <Link href="/">
-                    <Image src='/images/logo-raices-nav.png' height={200} width={200}   alt='Logo-Raices'  className='pl-5' priority />
+                    <Image src='/images/logo-raices-nav.png' height={180} width={180}   alt='Logo-Raices'  className='pl-5' priority />
                 </Link>
                 <div className="block lg:hidden sm:items-end">
                     {
