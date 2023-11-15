@@ -4,7 +4,7 @@ const Servicios = () => {
     return (
         <section >
 
-            <div className="bg-auto bg-no-repeat bg-center bg-fixed  mx-auto md:px-6 bg-green-800 p-10 bg-banner-title mb-10">
+            <div className="bg-auto bg-no-repeat bg-center bg-fixed  mx-auto md:px-6 bg-green-800 p-10 bg-banner-title mb-5">
                 <section className="mb-15 text-center">
                     <div className="grid lg:grid-cols-3 lg:gap-x-12  opacity-75">
                         <CardServices />
@@ -13,16 +13,16 @@ const Servicios = () => {
             </div>
             <div className="container my-10 mx-auto md:px-6">
                 <section className="text-center justify-center">
-                    <div className="flex justify-center mb-20">
+                    <div className="flex justify-center mb-10">
                         <div className="max-w-[700px] text-center">
-                            <h2 className="mb-6 text-center text-3xl font-bold">
+                            <h2 className="mb-6 text-center text-3xl font-bold text-green-900">
                                 ¿Por que elegir plantas de raices?
                             </h2>
 
                         </div>
                     </div>
 
-                    <div className="grid gap-x-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-12">
+                    <div className="grid  md:grid-cols-2 lg:grid-cols-4 lg:gap-x-12">
                         <div className="mb-12 lg:mb-0">
                             <div className="mb-6 inline-block rounded-full bg-primary-100 p-4 text-green-900 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
@@ -32,7 +32,7 @@ const Servicios = () => {
                                 </svg>
                             </div>
                             <h5 className="mb-4 text-lg font-bold">Envios a todo chile</h5>
-                            <p className="text-neutral-500 dark:text-neutral-300">
+                            <p className="text-green-900 ">
                                 Compra y recive directamente en tu hogar 
                             </p>
                         </div>
@@ -46,7 +46,7 @@ const Servicios = () => {
                                 </svg>
                             </div>
                             <h5 className="mb-4 text-lg font-bold">Sustratos</h5>
-                            <p className="text-neutral-500 dark:text-neutral-300">
+                            <p className="text-green-900 ">
                                 Todas nuestras plantas de coleccion estan en un sustrato especializado.
                             </p>
                         </div>
@@ -60,9 +60,8 @@ const Servicios = () => {
                                 </svg>
                             </div>
                             <h5 className="mb-4 text-lg font-bold">Extremely fast</h5>
-                            <p className="text-neutral-500 dark:text-neutral-300">
+                            <p className="text-green-900 ">
                                 Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                                ullam beatae hic voluptatibus dolores exercitationem
                             </p>
                         </div>
 
@@ -75,7 +74,7 @@ const Servicios = () => {
                                 </svg>
                             </div>
                             <h5 className="mb-4 text-lg font-bold">Soporte</h5>
-                            <p className="text-neutral-500 dark:text-neutral-300">
+                            <p className="text-green-900 ">
                                 Si compras una plantas en raices podras  contactarnos para resolver cualquier duda.
                                 
                             </p>

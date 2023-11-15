@@ -16,11 +16,11 @@ const Information = () => {
                 />
                 <div className="flex flex-col justify-center">
                     <h5
-                        className="mb-2 text-5xl font-extrabold text-green-900">
+                        className="mb-2 text-5xl font-extrabold text-green-950 sm:pt-5">
                         Monsteras deliciosas
                     </h5>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        La Monstera deliciosa es conocida por sus grandes hojas verdes con perforaciones decorativas. Es apreciada por su aspecto tropical y su capacidad para crecer en interiores..
+                    <p className="mb-4 text-base text-green-900">
+                        La Monstera deliciosa es conocida por sus grandes hojas verdes con perforaciones decorativas. Es apreciada por su aspecto tropical y su capacidad para crecer en interiores.
                     </p>
                 </div>
             </div>
