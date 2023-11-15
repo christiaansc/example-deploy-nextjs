@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AiFillCaretDown } from "react-icons/ai";
 
 
@@ -13,16 +14,23 @@ export const NAVIGATION = [
         icon: <AiFillCaretDown className='pt-1' />,
         subMenuItems: [
             {
+
+                image: <Image src='/images/logo-raices-nav.png' height={180} width={180} alt='Logo-Raices' className='pl-5' priority />,
                 nombre: 'Plantas',
                 subItem: [
-                    { title: 'Plantas de interior', path: '/plantas' },
-                    { title: 'Plantas de coleccion', path: '/plantas' },
+                    { title: 'Plantas de interior', path: '/tienda/plantas/interior' },
+                    { title: 'Plantas de coleccion', path: '/tienda/plantas/coleccion' },
                 ]
             },
             {
-                nombre: 'Accesorios',
+                image: <Image src='/images/logo-raices-nav.png' height={180} width={180} alt='Logo-Raices' className='pl-5' priority />,
+                nombre: 'Insumos',
                 subItem: [
-                    { title: 'Insumos', path: '/insumos' },
+                    { title: 'Tierras', path: '/tienda/Insumos/tierras' },
+                    { title: 'Fertilizantes', path: '/tienda/Insumos/tierras' },
+                    { title: 'Tutores', path: '/tienda/Insumos/tutores' },
+
+
                 ]
 
             },
@@ -37,9 +45,9 @@ export const NAVIGATION = [
             {
                 nombre: 'Asesorias',
                 subItem: [
-                    { title: 'Asesoria Gratis', path: '/plantas' },
-                    { title: 'Asesoria Online', path: '/plantas' },
-                    { title: 'Asesoria Presencial', path: '/plantas' },
+                    { title: 'Asesoria Gratis', path: 'servicios/asesorias/gratis' },
+                    { title: 'Asesoria Online', path: 'servicios/asesorias/online' },
+                    { title: 'Asesoria Presencial', path: 'servicios/asesorias/presencial' },
                 ]
             },
             {
