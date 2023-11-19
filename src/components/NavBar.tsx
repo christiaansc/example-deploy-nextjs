@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Image from "next/image"
 import Link from "next/link"
 
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose, AiFillCaretDown } from 'react-icons/ai'
 import NavLink from './NavLink'
 import MenuOverlay from './MenuOverlay'
 import { NAVIGATION } from '@/constants'
@@ -49,8 +49,13 @@ export const NavBar = () => {
                         {
                             NAVIGATION.map((item, idx) => (
                                 <div key={item.title} className='group'>
-                                    <NavLink href={item.path} title={item.title} icon={item.icon} /> 
-                                    <div className='w-full left-0 pt-2 absolute   group-hover:block hover:block hidden '>
+                                    <div className="flex justify-between">
+
+                                    <NavLink href={item.path} title={item.title}  />
+                                    {item.submenu ? <div className="flex" > <span className="flex items-center cursor-pointer pl-5"> <AiFillCaretDown /></span></div> : ''}
+                                    </div>
+
+                                    <div className='w-full left-0 pt-2 absolute group-hover:block hover:block hidden '>
                                         <div className='bg-white shadow-lg'>
                                             {
                                                 item.submenu && (
@@ -58,7 +63,7 @@ export const NavBar = () => {
                                                         <div className='flex justify-center '>
                                                             {item.subMenuItems.map((itemSub) => (
                                                                 <div key={itemSub.nombre} className='p-5'>
-                                                                    <h1 className='text-lg font-semibold text-green-900'>{itemSub.nombre}</h1>
+                                                                    <h1 className='text-md font-mono font-extralight text-green-900'>{itemSub.nombre}</h1>
                                                                     {
                                                                         itemSub.subItem.map((subitem, idx) => (
                                                                             <li key={idx} className=''>
@@ -81,7 +86,7 @@ export const NavBar = () => {
                     </ul>
                 </div>
             </div>
-            {menuopen ? <MenuOverlay/> : null}
+            {menuopen ? <MenuOverlay /> : null}
         </nav>
     )
 }

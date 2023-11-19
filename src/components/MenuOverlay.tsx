@@ -1,43 +1,81 @@
 import NavLink from "./NavLink"
-import {  useState } from 'react'
+import { useState } from 'react'
 import { NAVIGATION } from '@/constants'
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai"
 
 
 const MenuOverlay = () => {
 
+    const [heading, setheading] = useState("")
+    const [subHeading, setSubHeading] = useState("")
 
-
-    const [heading, setHeading] = useState("")
-    
     return (
-        <ul className="lg:hidden flex flex-col py-5 items-start pl-10">
-            {NAVIGATION.map((item) => (
-                <div key={item.title} onClick={() => setHeading(item.title)} className="group">
-                    <div >
-                        <NavLink href={item.path} title={item.title} icon={item.icon} />
-                    </div>
+        <ul className="lg:hidden flex flex-col py-5 items-start pl-10 pr-10 border-t">
+            {
+                NAVIGATION.map((elem) => (
 
-                    <div className={`${heading === item.title ? 'md:hidden':'hidden'}  group-hover:block hover:block hidden`}>
-                        {
-                            item.subMenuItems?.map((subItems) => (
-                                <div key={subItems.nombre}>
-                                    <div className="pl-3  text-green-950">
-                                        <h1 className="font-semibold">{subItems.nombre}</h1>
-                                        <div>
-                                            {subItems.subItem.map((subItem , idx) => (
-                                                <li key={idx} className="pl-3 ">
-                                                    <NavLink href={subItem.path} title={subItem.title}/>
-                                                </li>
-                                            ))}
-                                        </div>
+                    <li key={elem.title} className="w-full">
+                        <div className="flex justify-between">
+                            <div className="flex text-1xl">
+                                <NavLink href={elem.path} title={elem.title} />
+                            </div>
+                            {
+                                elem.submenu && (
+                                    <div className="flex">
+                                        <span className="flex  items-center cursor-pointer px-3 border-l"
+                                            onClick={() => { heading !== elem.title ? setheading(elem.title) : setheading(''); setSubHeading('') }}>
+                                            {heading === elem.title ? <AiFillCaretUp /> : <AiFillCaretDown />
+                                            }
+                                        </span>
                                     </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
+                                )
+                            }
+                        </div>
+                        <div className={`${heading === elem.title ? 'md:hidden' : 'hidden'}`}>
+                            <ul>
+                                {
+                                    elem.subMenuItems?.map(subElem => (
+                                        <li key={subElem.nombre}>
+                                            <div className="flex justify-between">
+                                                <h1 className='text-sm font-mono font-light text-green-900'>{subElem.nombre}</h1>
+                                                {
+                                                    elem.submenu ?
+                                                        <div className="flex">
+                                                            <span className="flex  items-center cursor-pointer px-3"
+                                                                onClick={() => subHeading !== subElem.nombre
+                                                                    ? setSubHeading(subElem.nombre)
+                                                                    : setSubHeading("")}>
+                                                                {subHeading === subElem.nombre ? <AiFillCaretUp /> : <AiFillCaretDown />}
+                                                            </span>
+                                                        </div>
+                                                        : ''
+                                                }
+                                            </div>
+                                            <div className={`
+                                            ${subHeading === subElem.nombre
+                                                    ? 'md:hidden'
+                                                    : 'hidden'}
+                                            `}>
+                                                <ul className="">
+                                                    {
+                                                        subElem.subItem.map(subList => (
+                                                            <li key={subList.title} className="pl-3 text-sm">
+                                                                <NavLink href={subList.path} title={subList.title} />
+                                                            </li>
+                                                        ))
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
 
-            ))}
+                    </li>
+
+                ))
+            }
         </ul>
     )
 }

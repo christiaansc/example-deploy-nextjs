@@ -3,7 +3,7 @@ import Link from 'next/link';
 const SocialMediaButton = () => {
     return (
         <div
-            className="fixed mb-20 right-5 inline-block bg-green-600 p-3  text-white  rounded-full   text-xs   bottom-5 uppercase leading-normal shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            className="fixed mb-20 right-5 inline-block bg-green-400 p-3  text-white  rounded-full   text-xs   bottom-5 uppercase leading-normal shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
         >
             <Link href='https://wa.me/937587991' target='_blank'>
                 <svg

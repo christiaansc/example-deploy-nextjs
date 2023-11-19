@@ -3,8 +3,8 @@ import Link from "next/link"
 const BannerTitle = ({ titulo, descripcion }: any) => {
     return (
         <>
-            <section className='bg-cream  md:px-6 py-10 '>
-                <h1 className='text-green-950 text-4xl text-center px-5'>{titulo}</h1>
+            <section className='bg-cream  md:px-6 py-20 '>
+                <h1 className='text-green-900 text-6xl  w-auto text-center px-5'>{titulo}</h1>
                 <div>
                     <p className="text-base text-center">
                         {descripcion}

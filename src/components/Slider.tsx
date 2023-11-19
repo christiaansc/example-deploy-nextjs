@@ -1,6 +1,10 @@
 'use client'
 import Image from 'next/image';
 import { useEffect } from 'react';
+
+import slider2 from '/public/images/banner_titulo.jpg'
+import slider1 from '/public/images/slider-logo.jpg'
+
 const Slider = () => {
     useEffect(() => {
         const init = async () => {
@@ -39,10 +43,10 @@ const Slider = () => {
 
             {/* <!--Carousel items--> */}
             <div
-                className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] object-contain">
                 {/* <!--First item--> */}
                 <div
-                    className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none "
                     data-te-carousel-active
                     data-te-carousel-item
                 >
@@ -50,7 +54,7 @@ const Slider = () => {
                     <Image
                         width={1500}
                         height={700}
-                        src="/images/slider-logo.jpg"
+                        src={slider1}
                         className="block w-full"
                         alt="Main-slider"
                         priority />
@@ -65,15 +69,13 @@ const Slider = () => {
                 </div>
                 {/* <!--Second item--> */}
                 <div
-                    className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none opacity-90"
                     data-te-carousel-item
-
-
                 >
                     <Image
                         width={1500}
                         height={700}
-                        src="/images/image-slider2.jpg"
+                        src={slider2}
                         className="block w-full"
                         alt="Main-slider"
                         priority />

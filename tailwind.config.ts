@@ -12,15 +12,10 @@ const config: Config = {
         'banner-title': "url('/images/banner_titulo.jpg')",
       },
       colors: {
-        'cream': '#f5f5f5'
+        'cream': '#f5f5f5',
       }
     },
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
+
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
